@@ -1,0 +1,69 @@
+body{
+    background: rgb(130, 178, 250);
+    justify-content: center;
+}
+.head h1{
+    color: #fff;
+    font-size: 140px;
+    margin-top: 1px;
+    font-weight: 500;
+    text-align: center;
+}
+.pic img{
+    height: 220px;
+}
+.pic{
+    margin-top: 200px;
+    margin-left: 250px;
+    align-content: center;
+    margin-right: 346px;   
+}
+.back{
+    margin-top: 40px;
+    text-align: center;   
+}
+.btn2{
+    background: rgb(130, 178, 250);
+    font-size: large;
+    width: 250px;
+    height: 30px;
+    color: #fff;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.pic h1{
+    margin-top: -220px;
+    font-size: 28px;
+    font-weight: 500;
+}
+.bot h1{
+    margin-left: 250px;
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: -10px;
+}
+.slt1{
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.slt1{
+    justify-content: space-around;
+    width: 28%;
+    height: 25px;
+    margin-left: 300px;
+    margin-top: -10px;
+}
+.button{
+    
+    margin-left: 300px;
+    width: 500px;
+    
+}
+.btn{
+    font-size: large;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}

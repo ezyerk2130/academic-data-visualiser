@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/cstyle.css' %}">
+<html>
+    <body>
+        <div class="head">
+            <h1>create style</h1>
+        </div>
+        <div class="edit">
+            <h2>Create/Edit learn style here</h2>
+            <h3><p>This is crucial since analysis can only be done</p></h3>
+            <p><h4>to created learn styles</h4></p>
+        </div>
+        <form action="{% url 'cstyle' %}" method = "POST">
+            {% csrf_token %}
+            {{form.as_p }}
+            <div class="input">
+                <p><input type="text" placeholder="Module Name" name="module_id"></p>
+                <p><input type="text" placeholder="Title/style" name="title"></p>
+                <p><input type="text" placeholder="Instructor" name = instructor></p>
+                <p><input type="text" placeholder="Course" name="course"></p>
+                <p><input type="text" placeholder="Academic year" name = "academic_year"></p>
+                <p><input type="text" placeholder="Type" name = "type"></p>
+            </div>
+            <div class="input1">
+                <input type="text" placeholder="Description" class="desc" name="description">
+            </div>
+            <div class="button">
+                <input type="submit" value="save" class="btn">
+                <input type="button" value="Delete" class="btn1">
+            </div>
+        </form>
+        <div class="button1">
+            <a href="{% url 'nowyou' %}">
+            <input type="button" value="Go back" class="btn2">
+            </a>
+        </div>
+        <div class="big">
+            <div class="box">
+                <h1>You can now preview your created styles here</h1>
+            </div>
+            <div class="table-box">
+                <table class="table" width="80%" cellspacing="4">
+                        <tr>
+                            <th>Title    |</th>
+                            <th>Instructor   |</th>
+                            <th>Module course   |</th>
+                            <th>Academic year   |</th>
+                            <th>Type</th>
+                        </tr>
+                       {% for object in all_data %}
+                            <tr>
+                                    <td>{{object.title}}</td>
+                                    <td>{{object.instructor}}t</td>
+                                    <td>{{object.module_course}}</td>
+                                    <td>{{object.academic_year}}</td>
+                                    <td>{{object.type}}</td>
+                            </tr>
+                       {% endfor %}
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

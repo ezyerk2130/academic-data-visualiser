@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<link rel="stylesheet" href="{%static 'css/ada.css'%}">
+<html>
+    <body>
+        <div class="words">
+            <h1>Welcome to!</h1>
+            <p><h2>ADA</h2></p>
+            <p><h3>Academic Data Analyzer</h3></p>
+            <div class="cont">
+                <a href="{% url 'login' %}">
+                <button>Continue</button>
+                </a>
+            </div>
+        </div>
+        <div class="btm">
+        <h2>An Alpha release 1.0</h2>
+        </div>
+    </body>
+</html>
